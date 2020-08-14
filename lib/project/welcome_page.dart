@@ -5,8 +5,9 @@ import 'package:week2_project/main.dart';
 
 class WelcomePage extends StatelessWidget {
   final String username;
+  final String password;
 
-  WelcomePage(this.username);
+  WelcomePage(this.username, this.password);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class WelcomePage extends StatelessWidget {
               ),
             ),
             Text(
-              'Selamat Datang $username!',
+              'Selamat Datang $username!, Password : $password',
               style: GoogleFonts.baloo(fontSize: 20, color: Colors.black54),
             ),
             SizedBox(height: 20),

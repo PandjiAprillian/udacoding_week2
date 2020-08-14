@@ -141,7 +141,7 @@ class _LoginPageState extends State<LoginPage> {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => WelcomePage(_username.text)));
+                            builder: (context) => WelcomePage(_username.text, _password.text)));
                   } else {
                     Fluttertoast.showToast(
                       msg: 'Username / Password Salah',
